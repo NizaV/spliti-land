@@ -1,0 +1,87 @@
+.main {
+    background-color: white;
+}
+.apple {
+    position: absolute;
+    width: 334.32px;
+    height: 662.32px;
+    left: 18px;
+    top: 286.09px;
+
+    
+    background: url(../images/apple-iphone-11.png);
+    background-size: cover;
+    transform: rotate(-9.31deg);
+    }
+    /* Accounts screen */
+
+.samsung {
+/* Samsung Galaxy S8 Mockup v1 1 */
+
+    position: absolute;
+    width: 786px;
+    height: 604px;
+    left: 885.18px;
+    top: 100px;
+
+    background: url(../images/samsung-galaxy-mock.png);
+    background-size: cover;
+    transform: rotate(8.49deg);
+
+}
+
+.icon {
+    /* Spliti - 800px - App Icon_01 1 */
+
+    position: absolute;
+    width: 147px;
+    height: 147px;
+    left: 322px;
+    top: 143px;
+
+    background: url(../images/spliti-app-icon.png);
+    background-size: cover;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.slogan {
+    /* AN EASIER WAY TO SPLIT */
+
+    position: absolute;
+    width: 793px;
+    height: 63px;
+    left: 355px;
+    top: 308px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: bold;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #000000;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+.slogan-child {
+    /* Purchases appear directly in the app. Tag in your friends, let Spliti do the math or let your friends pay their own amounts. Try out Autopilot, a hands free splitting experience for recurring splitting! */
+
+    position: absolute;
+    width: 661px;
+    height: 167px;
+    left: 355px;
+    top: 358px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(0, 0, 0, 0.7);
+
+
+}

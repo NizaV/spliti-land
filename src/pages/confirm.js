@@ -2,7 +2,7 @@ import React from "react"
 
 const ConfirmPage = () => (
   <main>
-    <h1>Confirmation Page</h1>
+    <h1> The Confirmation Page</h1>
     <p>Thanks</p>
   </main>
 )
