@@ -85,3 +85,62 @@
 
 
 }
+
+.email {
+    /* Input box */
+
+    position: absolute;
+    width: 393px;
+    height: 41px;
+    left: 458px;
+    top: 525px;
+
+    border: 1px solid #FF6E34;
+    box-sizing: border-box;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+input:focus {
+    outline: none !important;
+    border-color:  #f7a81b;
+    box-shadow: 0 0 10px  #f7a81b;
+  }
+
+
+.access {
+   /* Input box */
+
+    position: absolute;
+    width: 140px;
+    height: 41px;
+    left: 836px;
+    top: 525px;
+
+    background: #FF6E34;
+    border: 1px solid #FF6E34;
+    box-sizing: border-box;
+    border-radius: 0px 10px 10px 0px;
+
+    transition-duration: 0.4s;
+    z-index: 1;
+}
+.access-text {
+ /* Get early access */
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    margin-top: 7px;
+
+    color: #FFFFFF !important;
+
+
+}
+.access:hover {
+    border-color:  #f7a81b;
+    box-shadow: 0 0 10px  #f7a81b;
+}
