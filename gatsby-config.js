@@ -6,5 +6,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-image-background-slider`,
+    `gatsby-transformer-sharp`,
+     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/images`, // wherever background images are stored
+      },
+    },
+  
+  ],
+  
 }
