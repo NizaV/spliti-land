@@ -144,3 +144,16 @@ input:focus {
     border-color:  #f7a81b;
     box-shadow: 0 0 10px  #f7a81b;
 }
+
+.text-rotator {
+    position: absolute;
+    width: 400px;
+    height: 63px;
+    left: 835px;
+    top: 307px;
+    font-family: 'Quicksand', sans-serif;
+    font-style: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+}

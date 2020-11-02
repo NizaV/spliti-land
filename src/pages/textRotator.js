@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundSlider from 'gatsby-image-background-slider'
+import '../styles/index.css'
 
 export const TextRotator = () => {
   return <>
@@ -21,8 +22,8 @@ export const TextRotator = () => {
       }
     `)}
     initDelay={2} // delay before the first transition ( if left at 0, the first image will be skipped initially)
-    transition={4} // transition duration between images
-    duration={8} // how long an image is shown
+    transition={5} // transition duration between images
+    duration={3} // how long an image is shown
     // specify images to include (and their order) according to `relativePath`
     // images={["spliti-app-icon.png", "spliti-app-icon.png", "spliti-app-icon.png", "spliti-app-icon.png", "spliti-app-icon.png"]} 
 
@@ -33,10 +34,11 @@ export const TextRotator = () => {
     }}
     >
       {/* Captions in sync with background images*/}
-    <div>Utilities</div>
-    <div>Phone</div>
-    <div>Netflix</div>
-    <div>Hulu</div>
+    <div className="text-rotator">{""}</div>
+    <div className="text-rotator">{"UTILITIES"}</div>
+    <div className="text-rotator">{"PHONE"}</div>
+    <div className="text-rotator">{"NETFLIX"}</div>
+    <div className="text-rotator">{"HULU"}</div>
   </BackgroundSlider>
   
   </>
