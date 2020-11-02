@@ -21,15 +21,15 @@ export const TextRotator = () => {
         }
       }
     `)}
-    initDelay={2} // delay before the first transition ( if left at 0, the first image will be skipped initially)
-    transition={5} // transition duration between images
-    duration={3} // how long an image is shown
+    initDelay={1} // delay before the first transition ( if left at 0, the first image will be skipped initially)
+    transition={2} // transition duration between images
+    duration={2} // how long an image is shown
     // specify images to include (and their order) according to `relativePath`
     // images={["spliti-app-icon.png", "spliti-app-icon.png", "spliti-app-icon.png", "spliti-app-icon.png", "spliti-app-icon.png"]} 
 
     // pass down standard element props
     style={{
-      transform: "rotate(-2deg) scale(.9)",
+      // transform: "rotate(-2deg) scale(.9)",
       display: "none",
     }}
     >
@@ -39,6 +39,12 @@ export const TextRotator = () => {
     <div className="text-rotator">{"PHONE"}</div>
     <div className="text-rotator">{"NETFLIX"}</div>
     <div className="text-rotator">{"HULU"}</div>
+    <div className="text-rotator">{"RENT"}</div>
+    <div className="text-rotator">{"FOOD"}</div>
+    <div className="text-rotator">{"DRINKS"}</div>
+    <div className="text-rotator">{"TRIPS"}</div>
+    <div className="text-rotator">{"FLIGHTS"}</div>
+    <div className="text-rotator">{"MOVIES"}</div>
   </BackgroundSlider>
   
   </>
