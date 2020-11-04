@@ -22,7 +22,7 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
         {/* <script dangerouslySetInnerHTML= {{ __html: `src="text-animate-vertical-master/js/app.js"`}}></script> */}
-        <script src="text-animate-vertical-master/js/app.js" defer></script>
+        {/* <script src="text-animate-vertical-master/js/app.js" async></script> */}
       </body>
     </html>
   )
