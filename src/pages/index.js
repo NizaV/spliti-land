@@ -32,27 +32,27 @@ export default function Home() {
         /> */}
         <div className="text-rotator">
         <Typewriter
-            onInit={(typewriter) => {
-              typewriter.changeCursor('$')
-              .typeString('UTILITIES')
-              .pauseFor(300)
-              .deleteAll()
-              .start()
-              .typeString('PHONE')
-              .pauseFor(300)
-              .deleteAll()
-              .typeString('NETFLIX')
-              .pauseFor(300)
-              .deleteAll();
-            }}
-            // options={{
-            //   strings: ['UTILITIES', 'PHONE', 'NETFLIX', 'HULU', 'RENT', 'FOOD', 'DRINKS', 'TRIPS', 'FLIGHTS', 'MOVIES'],
-            //   autoStart: true,
-            //   loop: true,
-            //   deleteSpeed: 1,
-            //   cursor: null,
-            //   wrapperClassName: "text-rotator",
+            // onInit={(typewriter) => {
+            //   typewriter.changeCursor('$')
+            //   .typeString('UTILITIES')
+            //   .pauseFor(300)
+            //   .deleteAll()
+            //   .start()
+            //   .typeString('PHONE')
+            //   .pauseFor(300)
+            //   .deleteAll()
+            //   .typeString('NETFLIX')
+            //   .pauseFor(300)
+            //   .deleteAll();
             // }}
+            options={{
+              strings: ['UTILITIES', 'PHONE', 'NETFLIX', 'HULU', 'RENT', 'FOOD', 'DRINKS', 'TRIPS', 'FLIGHTS', 'MOVIES'],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 1,
+              cursor: null,
+              wrapperClassName: "text-rotator",
+            }}
           />
         </div>
       
