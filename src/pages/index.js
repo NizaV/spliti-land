@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import '../styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { TextRotator } from './textRotator'
 import Typewriter from 'typewriter-effect';
 
 
@@ -36,9 +35,15 @@ export default function Home() {
             onInit={(typewriter) => {
               typewriter.changeCursor('$')
               .typeString('UTILITIES')
-              .pauseFor(500)
+              .pauseFor(300)
               .deleteAll()
-              .start();
+              .start()
+              .typeString('PHONE')
+              .pauseFor(300)
+              .deleteAll()
+              .typeString('NETFLIX')
+              .pauseFor(300)
+              .deleteAll();
             }}
             // options={{
             //   strings: ['UTILITIES', 'PHONE', 'NETFLIX', 'HULU', 'RENT', 'FOOD', 'DRINKS', 'TRIPS', 'FLIGHTS', 'MOVIES'],
