@@ -58,11 +58,9 @@ export default function Home() {
       
         </div>
         <input className="email"></input>
-        <Link to="/word/">
           <button className="access">
              <p className="access-text"> {"Get Early Access"} </p>
             </button>
-        </Link>
         <div className="samsung">
 
         </div>
