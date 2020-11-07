@@ -117,7 +117,7 @@ input:focus {
     left: 836px;
     top: 525px;
 
-    background: #FF6E34;
+    /* background: #FF6E34; */
     border: 1px solid #FF6E34;
     box-sizing: border-box;
     border-radius: 0px 10px 10px 0px;
@@ -136,7 +136,7 @@ input:focus {
 
     margin-top: 7px;
 
-    color: #FFFFFF !important;
+    /* color: #FFFFFF !important; */
 
 
 }
