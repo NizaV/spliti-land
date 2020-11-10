@@ -1,23 +1,28 @@
-import React, {useState} from "react"
-import { Link } from "gatsby"
+import React, {useEffect} from "react"
 import '../styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Typewriter from 'typewriter-effect';
-
+import Sent from './sent.js';
 
 export default function Home() { 
-  const [color, setColor] = useState("#FF6E34");
-  const [textColor, setTextColor] = useState("white");
-  const [buttonText, setButtonText] = useState("Get Early Access")
-  const handleClick = () => {
-    setColor('white');
-    setTextColor('#FF6E34');
-    setButtonText('Sent');
-  }
-  const buttonStyle = {
-    backgroundColor: color,
-    color: textColor
-  }
+  // const [color, setColor] = useState("white");
+  // const [textColor, setTextColor] = useState("white");
+  // const [buttonText, setButtonText] = useState("Get Early Access");
+  // const [divStyle, setDivStyle] = useState("none");
+  const [showSent, setShowSent] = React.useState(false)
+  // const handleClick = () => setShowSent(true);
+
+  // const handleRemove = () => setShowSent(false)
+
+ 
+
+   const handleClick = () => {
+     setShowSent(true);
+     setTimeout(() => setShowSent(false), 1300)};
+    
+
+  
+
   return  <div className="main">
     <div className="container">
         <div className="apple">
@@ -44,11 +49,13 @@ export default function Home() {
        
       
         </div>
-        
-        <input className="email"></input>
-          <button className="access" id="myButton1" style={buttonStyle} onClick={handleClick}>
-             <p className="access-text"> {buttonText} </p>
+        <div>
+          <input className="email"></input>
+          <button className="access" id="myButton1" onClick={handleClick}  >
+             <p className="access-text"> {"Get Early Access"} </p>
             </button>
+            { showSent && <Sent />}
+        </div>
         <div className="samsung">
 
         </div>
