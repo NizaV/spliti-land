@@ -5,17 +5,7 @@ import Typewriter from 'typewriter-effect';
 import Sent from './sent.js';
 
 export default function Home() { 
-  // const [color, setColor] = useState("white");
-  // const [textColor, setTextColor] = useState("white");
-  // const [buttonText, setButtonText] = useState("Get Early Access");
-  // const [divStyle, setDivStyle] = useState("none");
   const [showSent, setShowSent] = React.useState(false)
-  // const handleClick = () => setShowSent(true);
-
-  // const handleRemove = () => setShowSent(false)
-
- 
-
    const handleClick = () => {
      setShowSent(true);
      setTimeout(() => setShowSent(false), 1300)};
@@ -43,6 +33,7 @@ export default function Home() {
             loop: true,
             deleteSpeed: 1,
             delay: 50,
+            cursor: null,
             wrapperClassName: "text-rotator",
           }}
         />

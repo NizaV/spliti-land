@@ -1,5 +1,6 @@
 .main {
   background-color: white;
+  width: 100%;
 }
 .apple {
   position: absolute;
@@ -22,6 +23,7 @@
   height: 604px;
   left: 885.18px;
   top: 100px;
+  width: 35%;
 
   background: url(../images/samsung-galaxy-mock.png);
   background-size: cover;
@@ -134,7 +136,8 @@ input:focus {
   box-shadow: 0 0 10px #f7a81b;
 }
 
-.text-rotator {
+.text-rotator,
+.Typewriter__cursor {
   position: absolute;
   width: 400px;
   height: 63px;
